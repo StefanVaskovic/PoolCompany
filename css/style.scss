@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+
+body {
+  background: url("../slike/pozadinaHeader1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Livvic', sans-serif;
+}
+
+#informacija p {
+  color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  color: #405578;
+}
+
+p.pocetna {
+  color: #fff;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+h1 {
+  &.slajder {
+    color: #ffffff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  }
+  &.slajder2, &.slajder3 {
+    color: #ffffff;
+  }
+}
+
+.footer a {
+  color: #fff;
+}
+
+.naslovi {
+  font-size: 22px;
+}
+
+.gornjiNav ul li a {
+  text-decoration: none !important;
+  color: #d1d1d1;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #fff;
+  }
+}
+
+.footer {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #000 !important;
+  ul li a {
+    text-decoration: none !important;
+    color: #424242;
+  }
+  i {
+    color: #000 !important;
+  }
+  ul li a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    text-decoration: none !important;
+    color: #000;
+  }
+}
+
+p {
+  &.poslednja {
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  }
+  font-size: 18px;
+}
+
+.active1 {
+  color: #000 !important;
+}
+
+.active2 {
+  color: #fff !important;
+}
+
+.informacije p {
+  color: #000;
+  text-shadow: 0px !important;
+}
+
+.poslednjiNav {
+  margin-top: 120px;
+}
+
+.carousel-fade {
+  .carousel-item {
+    opacity: 0;
+    transition: opacity ease-out .7s;
+    height: 500px;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+    height: 500px;
+    &.active {
+      opacity: 1;
+    }
+  }
+  .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+  }
+  .active {
+    &.carousel-item-left, &.carousel-item-right {
+      opacity: 0;
+    }
+  }
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+  }
+  .active {
+    &.carousel-item-left, &.carousel-item-prev {
+      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.poslednjiH2 {
+  color: #fff;
+  font-size: 39px;
+}
